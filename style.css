@@ -27,6 +27,10 @@ body {
   padding-bottom: 20px;
 }
 
+.middle {
+  padding-right: 30px;
+}
+
 .shopping__list {
   display: flex;
   justify-content: space-between;
@@ -37,9 +41,29 @@ body {
 }
 
 .bottom {
-  position: absolute;
-  bottom: 50px;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .shopping__list-add {
+  height: 30px;
+  width: 395px;
+  background-color: lightgrey;
+  border: none;
+}
+
+.shopping__list-add:focus {
+  outline: none;
+}
+
+.add__btn {
+  font-size: 40px;
+  border: none;
+  background-color: white;
+  padding-top: 10px;
 }
