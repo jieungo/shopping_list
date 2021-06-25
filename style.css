@@ -2,7 +2,6 @@ body {
   background-color: whitesmoke;
   margin: 0;
   height: 100vh;
-  width: 100vw;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 17px;
@@ -43,7 +42,7 @@ body {
 .bottom {
   position: fixed;
   bottom: 0;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +50,7 @@ body {
 }
 
 .shopping__list-add {
-  height: 30px;
+  height: 40px;
   width: 395px;
   background-color: lightgrey;
   border: none;
@@ -61,9 +60,22 @@ body {
   outline: none;
 }
 
+.shopping__list > i {
+  transition: all 0.2s ease-in-out;
+}
+
+.shopping__list > i:hover {
+  transform: scale(1.5);
+  color: red;
+  cursor: pointer;
+}
+
 .add__btn {
   font-size: 40px;
   border: none;
-  background-color: white;
-  padding-top: 10px;
+  padding-top: 20px;
+}
+
+.add__btn:hover {
+  transform: scale(1.2);
 }
