@@ -40,9 +40,9 @@ body {
 }
 
 .bottom {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;

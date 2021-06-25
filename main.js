@@ -2,7 +2,7 @@
 
 const deleteBtn = document.querySelector(".fa-trash-alt");
 const parent = document.querySelector(".middle");
-const child = document.getElementsByClassName(".shopping__list");
+const child = document.querySelector(".shopping__list");
 const addBtn = document.querySelector('.add__btn');
 
 deleteBtn.addEventListener('click', function() {
