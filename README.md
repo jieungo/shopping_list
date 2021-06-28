@@ -16,6 +16,6 @@ HTML, CSS, JAVASCRIPT
 
 1. input == null 은 event 막기
 2. 새로운 shopping list 추가는 되지만 삭제는 안됨
-3. input 입력 후 input = ""으로 설정 + 자동 focus 주기
+3. input 입력 후 input = ""으로 설정 + 자동 focus 주기 ✅
 4. 당연히 디자인 변경
 5. 생각 중
