@@ -46,9 +46,9 @@ function inputReset() {
     }
 
     
-    input.addEventListener('keydown', function(e) {
+    input.addEventListener('keypress', function(e) {
         if(e.key === "Enter") {
-            e.preventDefault(); //엔터키 이벤트는 작동. 영어는 잘되는데 한글은 두 줄이 출력됨 (??)
+            e.preventDefault();
             makeList();
         }
     })
