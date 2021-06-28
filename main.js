@@ -8,13 +8,14 @@ const addBtn = document.querySelector('.add__btn');
 const input = document.getElementById('inputReset');
 
 
-addBtn.addEventListener('click', function(e) {
+function makeList(e) {
+    
     let text = input.value;
     
     if(text == '') {
-        e.preventDefault
+        e.preventDefault();
     } else {
-
+    
         //새로운 ul 만든다
         const ul = document.createElement('ul');
         ul.setAttribute('class', 'shopping__list');
@@ -34,14 +35,27 @@ addBtn.addEventListener('click', function(e) {
         
         //ul을 middle div안에 넣는다
         middle.appendChild(ul);
-
+    
         inputReset();
     }
-});
+};
 
-function inputReset(id) {
+function inputReset() {
     input.value = "";
     input.focus();
     }
+
+    
+    input.addEventListener('keydown', function(e) {
+        if(e.key === "Enter") {
+            e.preventDefault(); //엔터키 이벤트는 작동. 영어는 잘되는데 한글은 두 줄이 출력됨 (??)
+            makeList();
+        }
+    })
+    
+    addBtn.addEventListener('click', function() {
+        makeList();
+    });
+
 
 
