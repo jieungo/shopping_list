@@ -15,7 +15,7 @@ function makeList(e) {
     if(text == '') {
         e.preventDefault();
     } else {
-    
+        
         //새로운 ul 만든다
         const ul = document.createElement('ul');
         ul.setAttribute('class', 'shopping__list');
@@ -37,7 +37,14 @@ function makeList(e) {
         middle.appendChild(ul);
     
         inputReset();
+
+        i.addEventListener('click', function() { //shopping items delete 기능 추가
+            i.remove();
+            ul.remove();
+            li.remove();
+        })
     }
+
 };
 
 function inputReset() {
@@ -56,6 +63,5 @@ function inputReset() {
     addBtn.addEventListener('click', function() {
         makeList();
     });
-
 
 
