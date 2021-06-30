@@ -2,9 +2,9 @@
 
 const deleteBtn = document.querySelector(".fa-trash-alt");
 const middle = document.querySelector(".middle");
+const addBtn = document.querySelector('.add__btn');
 const shopList = document.getElementsByClassName("shopping__list");
 const shopItem = document.getElementsByClassName("shopping__list-items");
-const addBtn = document.querySelector('.add__btn');
 const input = document.getElementById('inputReset');
 
 
@@ -15,7 +15,6 @@ function makeList(e) {
     if(text == '') {
         e.preventDefault();
     } else {
-        
         //새로운 ul 만든다
         const ul = document.createElement('ul');
         ul.setAttribute('class', 'shopping__list');
@@ -36,15 +35,16 @@ function makeList(e) {
         //ul을 middle div안에 넣는다
         middle.appendChild(ul);
     
+        //input 초기화 및 자동 입력 포커스 주기
         inputReset();
 
-        i.addEventListener('click', function() { //shopping items delete 기능 추가
+        //shopping items delete 기능
+        i.addEventListener('click', function() { 
             i.remove();
             ul.remove();
             li.remove();
         })
     }
-
 };
 
 function inputReset() {
@@ -53,15 +53,15 @@ function inputReset() {
     }
 
     
-    input.addEventListener('keypress', function(e) {
-        if(e.key === "Enter") {
-            e.preventDefault();
-            makeList();
-        }
-    })
-    
-    addBtn.addEventListener('click', function() {
+input.addEventListener('keypress', function(e) {
+    if(e.key === "Enter") {
+        e.preventDefault();
         makeList();
-    });
+    }
+})
+    
+addBtn.addEventListener('click', function() {
+    makeList();
+});
 
 
