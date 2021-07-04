@@ -77,11 +77,12 @@ body {
   border-radius: 30px;
   background-color: #50e3a4;
   position: absolute;
-  bottom: 165px;
+  margin-top: 130px;
 }
 
 .add__btn > div {
   font-size: 30px;
+  font-weight: 300;
   color: #38996f;
   width: 60px;
   height: 50px;

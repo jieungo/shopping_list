@@ -10,6 +10,8 @@ Shopping List
 
 HTML, CSS, JAVASCRIPT
 
+## 스크린샷
+
 ## 수정 및 보완해야 할 부분
 
 1. input == null 은 event 막기 ✅
