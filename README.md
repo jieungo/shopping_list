@@ -18,9 +18,9 @@ HTML, CSS, JAVASCRIPT
 
 2. 사용 예시
 
-<img alt="how can i use 1" src="https://user-images.githubusercontent.com/75401130/124381779-3e9a4180-dcff-11eb-9150-2065e202db55.gif" />
+<img alt="how can i use 1" src="https://user-images.githubusercontent.com/75401130/124381877-a51f5f80-dcff-11eb-8d42-fb6c45344ede.mov" />
 
-<img alt="how can i use 2" src="https://user-images.githubusercontent.com/75401130/124381730-0692fe80-dcff-11eb-903a-da4e3ac4057f.gif" />
+<img alt="how can i use 2" src="https://user-images.githubusercontent.com/75401130/124381859-8faa3580-dcff-11eb-97f4-400f49b7a7e4.mov" />
 
 ## 수정 및 보완해야 할 부분
 
