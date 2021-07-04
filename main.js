@@ -23,7 +23,7 @@ function makeList(e) {
         const li = document.createElement('li');
         li.setAttribute('class', 'shopping__list-items');
         const i = document.createElement('i');
-        i.setAttribute('class', 'far fa-trash-alt');
+        i.setAttribute('class', 'fas fa-check');
         
         //li 안에 input 추가
         li.append(text);
