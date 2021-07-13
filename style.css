@@ -42,6 +42,7 @@ body {
 
 .shopping__list-items {
   list-style: none;
+  text-align: left;
 }
 
 .shopping__list-add {
@@ -56,6 +57,7 @@ body {
 }
 
 .shopping__list > i {
+  margin-left: 5px;
   transition: all 0.2s ease-in-out;
 }
 
